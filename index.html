@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>The Weight of Ghosts</title>
+</head>
+
+<body>
+    <div id="images"></div> <!-- Image Container -->
+
+    <div id="elements"></div> <!-- Detached Element Container -->
+
+    <header> <!-- Project title header -->
+        <h2>The Weight of</h2>
+        <br>
+        <h1>GHOSTS</h1>
+    </header>
+
+    <div id="form"> <!-- Note: this is not a form element because submitting a form would reload the page. -->
+        <input placeholder="How many detached elements?" title="Number of Detached Elements" id="num" name="num"
+            type="text">
+        <button type="button" id="submit" alt="submit button" title="Run Program">→</button>
+
+        <div id="output" hidden> <!-- Output of the code -->
+            <span id="output-icon"></span>
+            <span id="output-text"></span>
+        </div>
+    </div>
+
+    <!-- Links and info -->
+    <div id="bottom-background"></div> <!-- For more visible links -->
+    <span id="left">Open Source on <a href="https://github.com/Jubillion/The-Weight-of-Ghosts" rel="noopener"
+            target="_blank">GitHub</a></span>
+    <span id="center">&copy; George Kamel 2023 <a
+            href="https://github.com/Jubillion/The-Weight-of-Ghosts/blob/main/LICENSE.txt" rel="noopener"
+            target="_blank">View License</a></span>
+    <span id="right">Ping: <span id="ping">[ERROR]</span> ms</span>
+
+    <!-- Links to scripts -->
+    <script src="ping.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

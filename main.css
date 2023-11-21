@@ -1,0 +1,167 @@
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    background: linear-gradient(rgb(122, 25, 231), rgb(142, 43, 255)), rgb(142, 43, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1,
+h2 {
+    display: inline;
+
+    /* Credit: https://stackoverflow.com/a/4919231 */
+    text-shadow: -1px -1px rgb(122, 25, 231), 1px -1px 0 rgb(122, 25, 231), -1px 1px 0 rgb(122, 25, 231), 1px 1px 0 rgb(122, 25, 231);
+}
+
+h1 {
+    font-size: 60pt;
+}
+
+h2 {
+    font-variant: small-caps;
+    font-size: 34pt;
+}
+
+header {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#left,
+#right,
+#center {
+    position: fixed;
+    bottom: 3px;
+}
+
+#left {
+    left: 4px;
+    z-index: 2
+}
+
+#center {
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#right {
+    right: 4px;
+}
+
+#form {
+    width: 40%;
+    margin: 5% 30%;
+    padding: 0;
+    z-index: 2;
+}
+
+#num {
+    color: rgb(42, 15, 85);
+    background-color: rgba(255, 255, 255, 0.87);
+    margin: 0;
+    border-radius: 90px 0 0 90px;
+    width: 80%;
+    border-width: 0;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: center;
+}
+
+#submit {
+    background-color: rgb(42, 15, 85);
+    border-radius: 0 90px 90px 0;
+    margin: 0;
+    width: 16%;
+    border-width: 0;
+    padding: 2%;
+    float: right;
+    font-size: 14pt;
+}
+
+#output {
+    background-color: transparent;
+    margin-top: 3%;
+    text-align: center;
+    padding: 5% 0 5% 0;
+    font-family: monospace;
+    font-size: 16pt;
+    height: 30pt;
+}
+
+#output-text {
+    color: rgb(42, 15, 85);
+    font-weight: bold;
+    width: 87%;
+    float: right;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 0 10px 10px 0;
+    padding-top: 10pt;
+}
+
+#output-icon {
+    background-color: rgb(42, 15, 85);
+    /*background-color: rgba(226, 0, 0, 0.84);*/
+    /*background-color: rgba(3, 146, 3, 0.84);*/
+    border-radius: 10px 0 0 10px;
+    font-size: 13pt;
+    float: left;
+    position: aboslute;
+    margin-top: 0;
+    width: 13%;
+    height: 100%;
+    padding-top: 10pt;
+}
+
+#images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#bottom-background {
+    position: fixed;
+    z-index: 0;
+    background-color: rgba(142, 43, 255, 0.7);
+    height: 20pt;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 620px) {
+    #center {
+        bottom: 23px;
+    }
+
+    #bottom-background {
+        height: calc(20pt + 20px);
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    #form {
+        width: 60%;
+        margin: 5% 20%;
+        min-width: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #form {
+        width: 80%;
+        margin: 5% 10%;
+        min-width: none;
+    }
+}
