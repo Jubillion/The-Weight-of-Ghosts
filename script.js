@@ -16,9 +16,9 @@ document.getElementById("submit").onclick = () => {
         img1.responseType = "blob"; // Ask the server to send blob objects.
         img2.responseType = "blob";
         img3.responseType = "blob";
-        img1.open("GET", "images/img380965882.webp"); // These are the files we are retrieving.
-        img2.open("GET", "images/img471465269.webp");
-        img3.open("GET", "images/img527866382.webp");
+        img1.open("GET", "img380965882.webp"); // These are the files we are retrieving.
+        img2.open("GET", "img471465269.webp");
+        img3.open("GET", "img527866382.webp");
         img1.onload = () => {img1 = URL.createObjectURL(img1.response)}; // Create URLs for each image after a response is received.
         img2.onload = () => {img2 = URL.createObjectURL(img2.response)};
         img3.onload = () => {img3 = URL.createObjectURL(img3.response)};
