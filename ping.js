@@ -9,7 +9,7 @@
         xhttp.onerror = () => { // Set ping display to "[ERROR] ms" if there is an error.
             ping = undefined;
         }
-        xhttp.open("GET", "pingtest"); // Open HTTP Request.
+        xhttp.open("GET", "https://jubillion.github.io/The-Weight-of-Ghosts/pingtest"); // Open HTTP Request.
         initialTime = performance.now(); // Record current time.
         xhttp.send(); // Send HTTP Request.
     }, 100); // Note: this runs 10 times a second to minimize resource consumption while preserving accuracy.
